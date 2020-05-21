@@ -22,6 +22,7 @@ en:
       newuser: "New User "
       profile: "Profile"
       setting: "Settings"
+      remember: "Remember me on this computer"
     user:
       namee: "Name"
       emaill: "Email"
