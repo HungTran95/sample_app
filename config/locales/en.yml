@@ -1,14 +1,16 @@
 en:
-  base_title: "Ruby on Rails Tutorial Sample App"
+  base_title: "Welcome to the Sample App"
   layouts:
     header:
       title_header: "Sample app"
+  title: "Home"
   static_pages:
-    english: "English"
-    vietnamese: "Vietnamese"
     home:
-      title: "Home"
-      home_html: "Welcome ${my}"
-      p_html: "This is the home page for the <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>sample application."
-      p1_html: "This is the home page for the<a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>sample application."
+      title: "Welcome"
+      home_html: "Welcome"
+      p_html: "This is the home page for the <a href='http://www.railstutorial.org/'>Ruby on Rails Tutorial</a>sample application."
+      p1_html: "This is the home page for the<a href='http://www.railstutorial.org/'>Ruby on Rails Tutorial</a>sample application."
       su_html: Sign up now !
+      home1: "Home"
+      help1: "Help"
+      login1: "Log in"
