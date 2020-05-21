@@ -1,5 +1,6 @@
 en:
   base_title: "Welcome to the Sample App"
+  text_login: "Login"
   layouts:
     header:
       title_header: "Sample app"
@@ -17,8 +18,13 @@ en:
       cre: "Create my account"
       success: "Welcome to the Sample App"
       ero: "Erro %{count}"
+      invalid: "Invalid email password combination"
+      newuser: "New User "
+      profile: "Profile"
+      setting: "Settings"
     user:
       namee: "Name"
       emaill: "Email"
       passw: "Password"
       passwcf: "Password Confirmation"
+      lgsuccess: "Login success"

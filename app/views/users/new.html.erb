@@ -10,7 +10,7 @@
       <%= f.email_field :email %>
       <%= f.label :password, t("static_pages.user.passw") %>
       <%= f.password_field :password %>
-      <%= f.label :password_confirmation, t("static_pages.user.passwcf"), t("confirmation") %>
+      <%= f.label t("static_pages.user.passwcf"), t("confirmation") %>
       <%= f.password_field :password_confirmation %>
       <%= f.submit t("static_pages.home.cre"), class: "btn btn-primary" %>
     <% end %>
