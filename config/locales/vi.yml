@@ -14,3 +14,11 @@ en:
       home1: "Home"
       help1: "Help"
       login1: "Log in"
+      cre: "Create my account"
+      success: "Welcome to the Sample App"
+      ero: "Erro %{count}"
+    user:
+      namee: "Name"
+      emaill: "Email"
+      passw: "Password"
+      passwcf: "Password Confirmation"
