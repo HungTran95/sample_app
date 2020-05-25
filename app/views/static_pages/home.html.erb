@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= t("static_pages.txt1_html") %>
+</head>
+<body>
+	<%= link_to t("static_pages.english"), locale: :en %>
+	<%= link_to t("static_pages.vietnamese"), locale: :vi %>
+
+	<% provide :title, t(".title") %>
+
+	<h1><%= t ".home_html" %></h1>
+	<p><%= t ".p_html" %></p>
+
+	<div class="center jumbotron">
+		<%= t ".home" %>
+		<h2>
+			<%= t ".p1_html" %>
+		</h2>
+		<%= link_to t(".su_html"), "#", class: "btn btn-lg btn-primary" %>
+	</div>
+</body>
+</html>

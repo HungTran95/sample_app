@@ -1,0 +1,17 @@
+vi:
+  base_title: "Ruby on Rails Tutorial Sample App"
+  layouts:
+    header: "Sample app"
+  static_pages:
+    home:
+      home_html: <h1>Xin chào</h1>
+      p_html: <p>Đây là trang chủ cho ứng dụng mẫu hướng dẫn <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a></p>
+      p1_html: <h2>Đây là trang chủ cho ứng dụng mẫu hướng dẫn <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a></h2>
+      su_html: <p>Đăng ký ngay !</p>
+      hp_html: <h2>TRỢ GIÚP</h2>
+      text_html: <p><h4>Nhận trợ giúp về Hướng dẫn Ruby on Rails tại trang
+          <a href="http://www.railstutorial.org/help">trợ giúp Hướng dẫn Rails.</a>.</h4></p>
+      text1_html: <p><h4>Để nhận trợ giúp về ứng dụng mẫu này, hãy xem
+          <a href="http://www.railstutoiúprial.org/book"><em>Hướng dẫn về Ruby on Rails.</em>book</a>.</h4></p>
+      txt_html: <p><title>Trợ giúp| Ứng dụng mẫu hướng dẫn Ruby on Rails</title></p>
+      txt1_html: <p><title>Trang chủ| Ứng dụng mẫu hướng dẫn Ruby on Rails</title></p>
