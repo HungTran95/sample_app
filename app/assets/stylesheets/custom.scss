@@ -9,19 +9,15 @@
 body {
   padding-top: 60px;
 }
-
 section {
   overflow: auto;
 }
-
 textarea {
   resize: vertical;
 }
-
 .center {
   text-align: center;
 }
-
 .center h1 {
   margin-bottom: 10px;
 }
@@ -37,7 +33,6 @@ textarea {
   padding-top: 9px;
   font-weight: bold;
 }
-
 #logo:hover {
   color: var(--color);
   text-decoration: none;
