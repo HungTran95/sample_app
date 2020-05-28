@@ -5,6 +5,7 @@ ruby "2.7.0"
 source "https://rubygems.org"
 gem "bootstrap-sass", "3.4.1"
 gem "config"
+gem "jquery-rails", "4.3.1"
 gem "mysql2"
 gem "rails-i18n"
 
