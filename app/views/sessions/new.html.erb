@@ -5,8 +5,15 @@
     <%= form_for :session, url: login_path do |f| %>
       <%= f.label :email %>
       <%= f.email_field :email, class: "form-control" %>
+
       <%= f.label :password %>
       <%= f.password_field :password, class: "form-control" %>
+
+      <%= f.label :remember_me, class: "checkbox inline" do %>
+        <%= f.check_box :remember_me %>
+        <span>t("static_pages.home.remember")</span>
+      <% end %>
+
       <%= f.submit t("static_pages.home.login1"), class: "btn btn-primary" %>
     <% end %>
     <p><%= t "static_pages.home.newuser" %><%= link_to t("static_pages.home.su_html"), signup_path %></p>
