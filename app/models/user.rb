@@ -11,6 +11,9 @@ class User < ApplicationRecord
     length: {maximum: Settings.name_max_length}
   validates :password, presence: true,
     length: {maximum: Settings.pass_max_length}
+  has_secure_password
+  validates :password, presence: true,
+    length: {minimum: Settings.password_size}, allow_nil: true
 
   class << self
     def digest string
@@ -26,8 +29,6 @@ class User < ApplicationRecord
       SecureRandom.urlsafe_base64
     end
   end
-
-  has_secure_password
 
   def remember
     self.remember_token = User.new_token

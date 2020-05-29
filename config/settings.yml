@@ -1,3 +1,6 @@
 email_max_length: 50
 name_max_length: 30
 pass_max_length: 20
+size: 80
+password_size: 6
+perpa_setting: 10
