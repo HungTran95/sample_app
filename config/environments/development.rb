@@ -53,6 +53,8 @@ Rails.application.configure do
   # Raises error for missing translations.
   # config.action_view.raise_on_missing_translations = true
 
+  config.middleware.use I18n::JS::Middleware
+
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
@@ -66,6 +68,7 @@ Rails.application.configure do
     port: 587,
     user_name: ENV["user_name"],
     password: ENV["password"],
-    authentication: "plain"
+    authentication: "plain",
+    enable_starttls_auto: true
   }
 end

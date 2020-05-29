@@ -8,10 +8,11 @@ class UsersController < ApplicationController
   end
 
   def show
-    return if @user
+    return unless @user
 
-    flash[:danger] = t "static_pages.home.nouser"
+    flash[:success] = t "static_pages.user.lgsuccess"
     redirect_to root_path
+    @microposts = @user.microposts.paginate(page: params[:page])
   end
 
   def new
@@ -59,10 +60,6 @@ class UsersController < ApplicationController
     redirect_to login_url
   end
 
-  def correct_user
-    redirect_to(root_url) unless current_user?(@user)
-  end
-
   def user_params
     params
       .require(:user).permit :name, :email, :password, :password_confirmation
@@ -70,6 +67,10 @@ class UsersController < ApplicationController
 
   def admin_user
     redirect_to(root_url) unless current_user.admin?
+  end
+
+  def correct_user
+    redirect_to(root_url) unless current_user?(@user)
   end
 
   def load_user

@@ -15,6 +15,7 @@ class User < ApplicationRecord
   has_secure_password
   validates :password, presence: true,
     length: {minimum: Settings.password_size}, allow_nil: true
+  has_many :microposts, dependent: :destroy
 
   class << self
     def digest string
@@ -29,6 +30,10 @@ class User < ApplicationRecord
     def new_token
       SecureRandom.urlsafe_base64
     end
+  end
+
+  def feed
+    Micropost.feed_user(id)
   end
 
   def remember
@@ -82,11 +87,6 @@ class User < ApplicationRecord
 
   def downcase_email
     email.downcase!
-  end
-
-  def create_activation_digest
-    self.activation_token = User.new_token
-    self.activation_digest = User.digest(activation_token)
   end
 
   def create_activation_digest
