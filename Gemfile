@@ -17,6 +17,7 @@ gem "sqlite3", "~> 1.4"
 
 gem "puma", "~> 4.1"
 gem "sass-rails", ">= 6"
+gem "figaro"
 
 gem "webpacker", "~> 4.0"
 

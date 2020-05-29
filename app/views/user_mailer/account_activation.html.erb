@@ -1,0 +1,8 @@
+<h1><%= t "static_pages.account.spa" %></h1>
+
+<p>Hi <%= @user.name %>,</p>
+
+<p>
+  <%= t "static_pages.account.text_1" %>
+</p>
+<%= link_to t("static_pages.account.active"), edit_account_activation_url(@user.activation_token, email: @user.email) %>
