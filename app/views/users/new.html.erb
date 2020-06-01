@@ -1,18 +1,8 @@
-<% provide :title, t("sign_up") %>
-<h1>Sign up</h1>
+<% provide :title, t("static_pages.home.signup") %>
+<% provide(:button_text, t("static_pages.user.creat")) %>
+<h1><%= t "static_pages.home.signup" %></h1>
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <%= form_for @user, url: signup_path do |f| %>
-      <%= render "shared/error_messages"%>
-      <%= f.label :name, t("static_pages.user.namee") %>
-      <%= f.text_field :name %>
-      <%= f.label :email, t("static_pages.user.emaill") %>
-      <%= f.email_field :email %>
-      <%= f.label :password, t("static_pages.user.passw") %>
-      <%= f.password_field :password %>
-      <%= f.label t("static_pages.user.passwcf"), t("confirmation") %>
-      <%= f.password_field :password_confirmation %>
-      <%= f.submit t("static_pages.home.cre"), class: "btn btn-primary" %>
-    <% end %>
+    <%= render "form" %>
   </div>
 </div>

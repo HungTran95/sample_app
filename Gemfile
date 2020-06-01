@@ -26,6 +26,11 @@ gem "jbuilder", "~> 2.7"
 
 gem "bcrypt", "~> 3.1.7"
 
+gem "faker", "2.1.2"
+
+gem "bootstrap-will_paginate", "1.0.0"
+gem "will_paginate", "3.1.8"
+
 gem "bootsnap", ">= 1.4.2", require: false
 
 group :development, :test do
