@@ -45,3 +45,12 @@ en:
       error_delete: "Erro delete user!"
       nouser: "NO USER"
       no_load: "No Loading User"
+      pleastext: "Please check your email to activate your account."
+    account:
+      acacount: "Account activated!"
+      invalidac: "Invalid activation link"
+      mess: "Account not activated. Check your email for the activation link."
+      spa: "Sample App"
+      text_1: "Welcome to the Sample App! Click on the link below to activate your account:"
+      active: "Activate"
+      noload_email: "Can't loading email !"
