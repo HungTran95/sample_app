@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
   before_action :logged_in_user, except: [:new, :show, :create]
-  before_action :logged_in_user, only: [:edit, :update]
   before_action :admin_user, only: :destroy
   before_action :load_user, except: [:new, :index, :create]
 
@@ -53,11 +52,11 @@ class UsersController < ApplicationController
   private
 
   def logged_in_user
-    unless logged_in?
-      store_location
-      flash[:danger] = t "static_pages.user.plealogin"
-      redirect_to login_url
-    end
+    return if logged_in?
+
+    store_location
+    flash[:danger] = t "static_pages.user.plealogin"
+    redirect_to login_url
   end
 
   def correct_user
