@@ -4,3 +4,8 @@ pass_max_length: 20
 size: 80
 password_size: 6
 perpa_setting: 10
+content_max_length: 140
+page: 10
+image_type: [image/jpeg, image/gif, image/png]
+size_micro: 50
+image_type2: "image/jpeg,image/gif,image/png"

@@ -24,6 +24,8 @@ en:
       setting: "Settings"
       remember: "Remember me on this computer"
       signup: "Sign up"
+      mirocreate: "Micropost created!"
+      micor_delete: "Micropost deleted"
     user:
       namee: "Name"
       emaill: "Email"
@@ -54,6 +56,8 @@ en:
       text_1: "Welcome to the Sample App! Click on the link below to activate your account:"
       active: "Activate"
       noload_email: "Can't loading email !"
+      mess_2: "must be a valid image format"
+      mess_3: "should be less than 5MB"
       fgpassword: "Forgot password"
       acacount1: "Account activation"
       pass_reset: "Password reset"
@@ -68,3 +72,15 @@ en:
     email:
       mess_email: "Email sent with password reset instructions"
       mess_email1: "Email address not found"
+    error:
+      text_1: "The form contains"
+      text_error: "error"
+      text_delete: "Can'n delete micropost !"
+    alert:
+      text: "You sure?"
+      text_viewpro: "view my profile"
+      text_micro: "micropost"
+      text_micro2: "Micropost"
+      text_pace: "Compose new micropost..."
+      txt_alert: "Maximum file size is 5MB. Please choose a smaller file."
+      txt_post: "Posted"

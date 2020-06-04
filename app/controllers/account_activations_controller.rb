@@ -2,9 +2,9 @@ class AccountActivationsController < ApplicationController
   before_action :load_us, only: :edit
 
   def edit
-    if !@user.activated? && @user.authenticated?(:activation, params[:id])
-      user.activate
-      log_in user
+    if @user && !@user.activated? && @user.authenticated?(:activation, params[:id])
+      @user.activate
+      log_in @user
       flash[:success] = t "static_pages.account.acacount"
       redirect_to user
     else
