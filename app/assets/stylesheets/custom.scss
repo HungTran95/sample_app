@@ -6,6 +6,9 @@
   --color1: red;
   --color2: #bbb;
   --color3: #e8e8e8;
+  --color4: blue;
+  --color5: gray;
+
 }
 
 /* universal */
@@ -73,6 +76,44 @@ aside {
 }
 .gravatar_edit {
   margin-top: 15px;
+}
+
+.stats {
+  overflow: auto;
+  margin-top: 0;
+  padding: 0;
+  a {
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid $gray-lighter;
+    color: var(--color5);
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: var(--color4);
+    }
+  }
+  strong {
+    display: block;
+  }
+}
+
+.user_avatars {
+  overflow: auto;
+  margin-top: 10px;
+  .gravatar {
+    margin: 1px 1px;
+  }
+  a {
+    padding: 0;
+  }
+}
+
+.users.follow {
+  padding: 0;
 }
 
 /* forms */

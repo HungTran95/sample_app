@@ -11,7 +11,8 @@ class Micropost < ApplicationRecord
         message: I18n.t("static_pages.account.mess_3") }
 
   scope :recent_posts, -> {order created_at: :desc}
-  scope :feed_user, -> (id){where "user_id = ?", "#{id}"}
+  scope :feed_user, -> (following_ids, id){where "user_id IN (?) OR user_id = ?",
+    following_ids, id}
 
   def display_image
     image.variant(resize_to_limit: [500, 500])
