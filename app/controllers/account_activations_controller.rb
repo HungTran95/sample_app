@@ -6,7 +6,7 @@ class AccountActivationsController < ApplicationController
       @user.activate
       log_in @user
       flash[:success] = t "static_pages.account.acacount"
-      redirect_to user
+      redirect_to @user
     else
       flash[:danger] = t "static_pages.account.invalidac"
       redirect_to root_url

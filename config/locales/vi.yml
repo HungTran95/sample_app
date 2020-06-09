@@ -76,6 +76,10 @@ en:
       text_1: "The form contains"
       text_error: "error"
       text_delete: "Can'n delete micropost !"
+      txt_error: "Error create Relationships!"
+      txt_error1: "Error destroy Relationships!"
+      txt_errorload: "Can't loading user !"
+      txt_errorloadfl: "Can't loading follow !"
     alert:
       text: "You sure?"
       text_viewpro: "view my profile"
@@ -84,3 +88,7 @@ en:
       text_pace: "Compose new micropost..."
       txt_alert: "Maximum file size is 5MB. Please choose a smaller file."
       txt_post: "Posted"
+      txt_follow: "Follow"
+      txt_unfollow: "Unfollow"
+      txt_following: "Following"
+      txt_followers: "Followers"
