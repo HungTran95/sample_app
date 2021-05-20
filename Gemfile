@@ -21,7 +21,7 @@ gem "active_storage_validations", "0.8.2"
 
 gem "i18n-js"
 
-gem "puma", "~> 4.1"
+gem "puma", "~> 4.3"
 gem "sass-rails", ">= 6"
 gem "figaro"
 
